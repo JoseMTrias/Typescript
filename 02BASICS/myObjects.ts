@@ -18,17 +18,50 @@
 
 // type Aliases
 
+// type User = {
+//     name: string;
+//     email: string;
+//     isActive: boolean
+// }
+
+
+// function createUser(user: User): User {
+//     return {name: "", email: "", isActive: true}
+// }
+
+// createUser({name: "", email: "", isActive: true})
+
 type User = {
-    name: string;
-    email: string;
+    readonly _id: string
+    name: string
+    email: string
     isActive: boolean
+    creditCardDetails?: number
+}
+
+let myUser: User = {
+    _id: "1234",
+    name: "hi",
+    email: "hi@hi.com",
+    isActive: false
+}
+
+type cardNumber = {
+    cardnumber: string
+}
+
+type cardDate = {
+    cardDate: string
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv: number
 }
 
 
-function createUser(user: User): User {
-    return {name: "", email: "", isActive: true}
-}
 
-createUser({name: "", email: "", isActive: true})
+myUser.email = "asdf@asdf.com"
+// myUser._id = "trial"
+
 
 export {}
