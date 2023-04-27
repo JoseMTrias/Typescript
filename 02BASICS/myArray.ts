@@ -2,12 +2,12 @@ const bands: string[] = [];
 const bandsMembers: number[] = [];
 // const bandsMembers: Array<number> = []   different way
 
-type User = {
+type UserX = {
   name: string;
   isActive: boolean;
 };
 
-const allUsers: User[] = [];
+const allUsers: UserX[] = [];
 
 const MLModels: number[][] = [[255, 255, 255], []];
 
