@@ -21,9 +21,22 @@ function identityFour<T>(val: T): T {
   return val;
 }
 
-interface Bootle{
-    brand: string,
-    type: number
+interface Bootle {
+  brand: string;
+  type: number;
 }
 
 // identityFour<Bootle>({})
+
+function getSearchProducts<T>(products: T[]): T {
+  // do some database operations
+  const myIndex = 3;
+  return products[myIndex];
+}
+
+const getMoreSeachProducts = <T>(products: T[]): T => {
+  // const getMoreSeachProducts = <T,>(products: T[]): T => {     adding a , so its not confused with a jsx
+  // do some database operations
+  const myIndex = 55;
+  return products[myIndex];
+};

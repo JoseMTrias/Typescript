@@ -16,3 +16,14 @@ function identityFour(val) {
     return val;
 }
 // identityFour<Bootle>({})
+function getSearchProducts(products) {
+    // do some database operations
+    const myIndex = 3;
+    return products[myIndex];
+}
+const getMoreSeachProducts = (products) => {
+    // const getMoreSeachProducts = <T,>(products: T[]): T => {     adding a , so its not confused with a jsx
+    // do some database operations
+    const myIndex = 55;
+    return products[myIndex];
+};
